@@ -73,6 +73,10 @@
 
 <details>
 
+Для данного вида резеревирования используется команда `mysqlbackup` с параметром `--incremental-base=history:last_full_backup`.
+
+Также можно использовать и сторонние утилиты. Например, Percona XtraBackup, которая позволяет делать архивы баз данных на лету без блокировок таблиц. Например, `xtrabackup --backup --target-dir=/backupdb/inc1 --incremental-basedir=/backupdb/full`.
+
 </details>
 
 *Приведите ответ в свободной форме.*
